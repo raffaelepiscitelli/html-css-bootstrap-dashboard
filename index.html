@@ -13,40 +13,117 @@
 </head>
 <body>
 
-    <header>
+    <header class="d-flex align-items-center">
+
+        <div class="container-header bg-white d-flex flex-lg-row">
+
+            <div>
+
+            <img id="logo" src="./img/logo.svg" alt="">
+
+            <img id="mobile-logo" src="./img/mobile-logo.png" alt="">
+
+            </div>
+
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                </div>
+              </nav>
+
+        </div>
 
     </header>
 
     <div class="flex wrap">
 
-        <div class="custom-side-bar">
-            
+        <div class="custom-side-bar d-flex flex-column align-items-center justify-content-between py-4">
+
+            <div class="container-up-side-bar">
+
+                <div class="mb-3">
+
+                    <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+
+                    <span class="custom-collapse-side-bar-header">Home</span>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <i class="fa-solid fa-chart-simple" style="color: #ffffff;"></i>
+
+                    <span class="custom-collapse-side-bar-header">Stats</span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-signal" style="color: #ffffff;"></i>
+
+                    <span class="custom-collapse-side-bar-header">Signals</span>
+
+                </div>
+
+            </div>
+
+            <div class="container-bottom-side-bar">
+
+                <div>
+
+                    <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+
+                    <span class="custom-collapse-side-bar-header">Admin</span>
+
+                </div>
+
+            </div>
 
         </div>
 
-        <main>
+        <main class="bg-white">
 
-            <section class="custom-upper-section">
+            <section class="custom-upper-section bg-custom-blue">
 
                 <div class="container">
 
                     <div class="row">
 
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-2 order-sm-1 order-md-3">
 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate, tempore quia vitae, voluptates unde officiis ex saepe voluptate nam numquam voluptatibus illum minima voluptas nostrum! Amet fugiat excepturi magni?
-
-                        </div>
-
-                        <div class="col-12 col-md-4">
-
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ad. Aut et totam itaque obcaecati excepturi nulla omnis. Vitae necessitatibus culpa temporibus assumenda blanditiis corporis! Illum officia optio similique quis?
+                            Nuovo Studente <span><i class="fa-solid fa-plus border border-white rounded-1 p-2 ms-2" style="color: #ffffff;"></i></span>
 
                         </div>
 
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-8 order-sm-2 order-md-1">
 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dignissimos. Tenetur, repellat perferendis eligendi ad ut laudantium officiis architecto culpa incidunt aperiam illo deleniti labore laborum quia veniam ea a?
+                            <div>
+
+                                <h1 class="d-inline">Boolean</h1> 
+                                
+                                <span class="bg-custom rounded-4 p-1">Piano Blaze</span>
+
+                            </div>
+
+                            <div>
+
+                                <span class="bg-custom rounded-4 p-1">3 app</span>
+
+                                <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i>
+                                
+                                <i class="fa-solid fa-plus bg-custom rounded-4 p-1" style="color: #ffffff;"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-2 order-sm-3 order-md-2">
+
+                            <p>Studenti online negli ultimi 30 minuti</p>
+                            
+                            <h1>125</h1>
 
                         </div>
 
@@ -56,178 +133,211 @@
 
             </section>
 
-            <div class="container-main-section container">
+            <div class="container-main-section container pt-3">
 
                 <div class="row">
 
-                    <div class="col-12 col-lg-8 order-sm-1 order-md-1 order-lg-1">
+                    <div class="col-12 col-lg-8">
 
-                        <div class="card mb-4" style="width: 100%;">
-                            <div class="card-header">
-                              <h2>Prossime classi</h2>
-                            </div>
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                      <td class="pe-lg-5" scope="col">Nome</td>
-                                      <td class="custom-collapse" scope="col">Data inizio</td>
-                                      <td scope="col">ROI</td>
-                                      <td scope="col">Stato</td>
-                                      <td scope="col">Azioni</td>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td scope="row">Classe 75</td>
-                                      <td class="custom-collapse">15 Feb 2021</td>
-                                      <td>20%</td>
-                                      <td><button type="button" class="btn btn-success">Done</button></td>
-                                      <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">Classe 76</td>
-                                        <td class="custom-collapse">16 Feb 2021</td>
-                                        <td>20%</td>
+                        <div class="col-12 order-sm-1 order-md-1 order-lg-1">
+
+                            <div class="card mb-4" style="width: 100%;">
+                                <div class="card-header">
+                                <h2>Prossime classi</h2>
+                                </div>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                        <td class="pe-lg-5" scope="col">Nome</td>
+                                        <td class="custom-collapse" scope="col">Data inizio</td>
+                                        <td class="custom-collapse" scope="col">ROI</td>
+                                        <td scope="col">Stato</td>
+                                        <td scope="col">Azioni</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td scope="row"><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
+                                        <td class="custom-collapse">15 Feb 2021</td>
+                                        <td class="custom-collapse">20%</td>
                                         <td><button type="button" class="btn btn-success">Done</button></td>
                                         <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">Classe 77</td>
-                                        <td class="custom-collapse">17 Feb 2021</td>
-                                        <td>20%</td>
-                                        <td><button type="button" class="btn btn-warning">process</button></td>
-                                        <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">Classe 78</td>
-                                        <td class="custom-collapse">18 Feb 2021</td>
-                                        <td>20%</td>
-                                        <td><button type="button" class="btn btn-success">Done</button></td>
-                                        <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">Classe 79</td>
-                                        <td class="custom-collapse">19 Feb 2021</td>
-                                        <td>20%</td>
-                                        <td><button type="button" class="btn btn-danger">failed</button></td>
-                                        <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">Classe 80</td>
-                                        <td class="custom-collapse">20 Feb 2021</td>
-                                        <td>20%</td>
-                                        <td><button type="button" class="btn btn-success">Done</button></td>
-                                        <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">Classe 81</td>
-                                        <td class="custom-collapse">21 Feb 2021</td>
-                                        <td>20%</td>
-                                        <td><button type="button" class="btn btn-danger">failed</button></td>
-                                        <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">Classe 82</td>
-                                        <td class="custom-collapse">22 Feb 2021</td>
-                                        <td>20%</td>
-                                        <td><button type="button" class="btn btn-success">Done</button></td>
-                                        <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
-                                    </tr>
-                                  </tbody>
-                            </table>
-                          </div>
-
-                    </div>
-
-                    <div class="col-12 col-lg-4 order-sm-3 order-md-3 order-lg-2">
-
-                        <div class="card mb-4" style="width: 100%;">
-                            <div class="card-header">
-                              <h2>Todo</h2>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><img src="./img/class-avatar.jpg" alt=""> Classe 76</td>
+                                            <td class="custom-collapse">16 Feb 2021</td>
+                                            <td class="custom-collapse">20%</td>
+                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><img src="./img/class-avatar.jpg" alt=""> Classe 77</td>
+                                            <td class="custom-collapse">17 Feb 2021</td>
+                                            <td class="custom-collapse">20%</td>
+                                            <td><button type="button" class="btn btn-warning">process</button></td>
+                                            <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><img src="./img/class-avatar.jpg" alt=""> Classe 78</td>
+                                            <td class="custom-collapse">18 Feb 2021</td>
+                                            <td class="custom-collapse">20%</td>
+                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><img src="./img/class-avatar.jpg " alt=""> Classe 79</td>
+                                            <td class="custom-collapse">19 Feb 2021</td>
+                                            <td class="custom-collapse">20%</td>
+                                            <td><button type="button" class="btn btn-danger">failed</button></td>
+                                            <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><img src="./img/class-avatar.jpg" alt=""> Classe 80</td>
+                                            <td class="custom-collapse">20 Feb 2021</td>
+                                            <td class="custom-collapse">20%</td>
+                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><img src="./img/class-avatar.jpg" alt=""> Classe 81</td>
+                                            <td class="custom-collapse">21 Feb 2021</td>
+                                            <td class="custom-collapse">20%</td>
+                                            <td><button type="button" class="btn btn-danger">failed</button></td>
+                                            <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><img src="./img/class-avatar.jpg" alt=""> Classe 82</td>
+                                            <td class="custom-collapse">22 Feb 2021</td>
+                                            <td class="custom-collapse">20%</td>
+                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <td><i class="fa-solid fa-pen border border-secondary rounded-1 p-1 fs-5 text me-2" style="color: #6c757d;"></i><i class="fa-solid fa-trash border border-secondary rounded-1 p-1 fs-5" style="color: #6c757d;"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
 
-                            <div class="card" style="width: 100%;">
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item"><div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Kickoff nuove classi
-                                    </label>
-                                  </div></li>
-                                  <li class="list-group-item"><div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Lezione su Bootstrap 5 in classe #75
-                                    </label>
-                                  </div></li>
-                                  <li class="list-group-item"><div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Controllare username github studenti
-                                    </label>
-                                  </div></li>
-                                </ul>
-                              </div>
-
-                            </div>
-                              
                         </div>
 
-                    </div>
+                        <div class="col-12 order-sm-2 order-md-2">
 
-                    <div class="col-12 col-lg-8 order-sm-2 order-md-2">
+                            <div class="card mb-4" style="width: 100%;">
+                                <div class="card-header">
+                                <h2>F.A.Q.</h2>
+                                </div>
 
-                        <div class="card" style="width: 100%;">
-                            <div class="card-header">
-                              <h2>F.A.Q.</h2>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Come aggiungere un nuovo studente?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        Clicca sul + in alto nella sezione blu.
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        Clicca sull'icone della campanella.
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Posso usare questa dashboard da mobile?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                        Sì.
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                
                             </div>
 
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                      Come aggiungere un nuovo studente?
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      Clicca sul + in alto nella sezione blu.
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                      Come posso accedere alle informazioni del mio account?
-                                    </button>
-                                  </h2>
-                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      Clicca sull'icone della campanella.
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                      Posso usare questa dashboard da mobile?
-                                    </button>
-                                  </h2>
-                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      Sì.
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            
-                          </div>
-
+                        </div>
+                    
                     </div>
 
-                    <div class="col-12 col-lg-4 order-sm-4 order-md-4">
+                    <div class="col-12 col-lg-4">
 
-                        Grafico Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit corrupti possimus, fuga reiciendis cupiditate perspiciatis dicta aperiam at dolorem dolorum laudantium amet laborum ipsum quidem necessitatibus architecto a unde. Excepturi?
+                        <div class="col-12 order-sm-3 order-md-3 order-lg-2">
+
+                            <div class="card mb-4" style="width: 100%;">
+                                <div class="card-header">
+                                    <h2>Todo</h2>
+                                </div>
+                                <div class="p-2">
+                                    <div class="card" style="width: 100%;">
+                                        <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                Kickoff nuove classi
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                Lezione su Bootstrap 5 in classe #75
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                Controllare username github studenti
+                                                </label>
+                                            </div>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 order-sm-4 order-md-4">
+
+                            <div class="card" style="width: 100%;">
+                                
+                                <div class="p-2">
+                                    <div class="card" style="width: 100%;">
+                                        <img src="./img/stats.jpeg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Utenti attivi</h5>
+                                        <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimno mese</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Gennaio: 1200</li>
+                                        <li class="list-group-item">Febbraio: 800</li>
+                                        <li class="list-group-item">Marzo: 1500</li>
+                                        </ul>
+                                        <div class="card-body">
+                                        <a href="#" class="card-link">Visualizza report approfondito </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
 
                     </div>
 

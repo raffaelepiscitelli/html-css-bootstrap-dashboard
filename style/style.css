@@ -11,33 +11,78 @@ header {
     height: 60px;
 }
 
+#logo {
+    display: none;
+}
+
+#mobile-logo {
+    display: inline;
+    width: 2.5rem;
+}
+
+.custom-search-bar {
+    width: 100%;
+}
+
 .custom-side-bar {
     background-image: url(../img/sidebar-bg.png);
     background-color: rgb(5, 30, 52);
     background-position: initial;
     width: 50px;
     height: calc(100vh - 60px);
+    color: white;
 }
 
 main {
     height: calc(100vh - 60px);
     width: calc(100vw - 50px);
-    background-color: rgb(27, 114, 232);
+    overflow: auto;
+}
+
+td img {
+    width: 1.5rem;
+}
+
+.custom-upper-section {
+    color: white;
+}
+
+.bg-custom-blue {
+    background-color: rgb(22, 91, 186);
 }
 
 .custom-collapse {
     display: none;
 }
 
+.custom-collapse-side-bar-header {
+    display: none;
+}
+
+
 @media screen and (min-width: 768px) {
     .custom-collapse {
         display: table-cell;
     }
+
 }
  
 @media screen and (min-width: 992px) {
+
+    #logo {
+        display: inline;
+    }
+
+    #mobile-logo {
+        display: none;
+    }
+
     .custom-side-bar {
         width: 100px;
+    }
+
+    .custom-collapse-side-bar {
+        display: inline;
     }
 
     main {
