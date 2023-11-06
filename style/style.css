@@ -24,6 +24,16 @@ main {
     width: calc(100vw - 50px);
     background-color: rgb(27, 114, 232);
 }
+
+.custom-collapse {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .custom-collapse {
+        display: table-cell;
+    }
+}
  
 @media screen and (min-width: 992px) {
     .custom-side-bar {
