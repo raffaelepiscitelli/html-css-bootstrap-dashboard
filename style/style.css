@@ -11,8 +11,15 @@ header {
     height: 60px;
 }
 
+.container-header,
+.navbar,
+form {
+    width: 100%;
+}
+
 #logo {
     display: none;
+    height: fit-content;
 }
 
 #mobile-logo {
@@ -20,9 +27,10 @@ header {
     width: 2.5rem;
 }
 
-.custom-search-bar {
-    width: 100%;
+.fs-4.px-3.d-flex i:nth-child(-n+3) {
+    display: none;
 }
+
 
 .custom-side-bar {
     background-image: url(../img/sidebar-bg.png);
@@ -59,7 +67,6 @@ td img {
     display: none;
 }
 
-
 @media screen and (min-width: 768px) {
     .custom-collapse {
         display: table-cell;
@@ -77,11 +84,15 @@ td img {
         display: none;
     }
 
+    .fs-4.px-3.d-flex i:nth-child(-n+3) {
+        display: inline;
+    }
+
     .custom-side-bar {
         width: 100px;
     }
 
-    .custom-collapse-side-bar {
+    .custom-collapse-side-bar-header {
         display: inline;
     }
 
