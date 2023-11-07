@@ -35,15 +35,24 @@
             
             </nav>
 
-            <div class="fs-4 px-3 d-flex">
+            <div class="fs-4 px-3 d-flex align-items-center">
 
                 <i class="fa-solid fa-list-ul me-4" style="color: #474343;"></i>
 
                 <i class="fa-solid fa-circle-question me-4" style="color: #474343;"></i>
 
-                <i class="fa-solid fa-ellipsis-vertical me-4" style="color: #474343;"></i>
-
-                <i class="fa-solid fa-bell" style="color: #ff8f00;"></i>
+                <i class="fa-solid fa-ellipsis-vertical me-3" style="color: #474343;"></i>
+                
+                <div class="dropdown d-flex align-items-center">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell fs-4 text" style="color: #ff8f00;"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Profilo</button></li>
+                      <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                      <li><button class="dropdown-item" type="button">Logout</button></li>
+                    </ul>
+                </div>
 
             </div>
 
@@ -57,7 +66,7 @@
 
             <div class="container-up-side-bar">
 
-                <div class="mb-3">
+                <div class="mb-3 bg-hover-side-bar">
 
                     <i class="fa-solid fa-house" style="color: #ffffff;"></i>
 
@@ -65,7 +74,7 @@
 
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-3 bg-hover-side-bar">
 
                     <i class="fa-solid fa-chart-simple" style="color: #ffffff;"></i>
 
@@ -73,7 +82,7 @@
 
                 </div>
 
-                <div>
+                <div class="bg-hover-side-bar">
 
                     <i class="fa-solid fa-signal" style="color: #ffffff;"></i>
 
@@ -85,7 +94,7 @@
 
             <div class="container-bottom-side-bar">
 
-                <div>
+                <div class="bg-hover-side-bar">
 
                     <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
 
@@ -113,11 +122,72 @@
 
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <h5 class="offcanvas-title" id="offcanvasLeftLabel">Inserisci un nuovo studente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                                ...
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="formGroupExampleInput" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" aria-label="First name">
+                                    </div>
+                                      <div class="col-md-6">
+                                        <label for="formGroupExampleInput" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" aria-label="First name">
+                                      </div>
+                                    <div class="col-md-6">
+                                      <label for="inputEmail4" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputPassword4" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Indirizzo Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                      </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Indirizzo</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputCity" class="form-label">Città</label>
+                                      <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                      <label for="inputState" class="form-label">Stato</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>Scegli...</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <label for="inputZip" class="form-label">CAP</label>
+                                      <input type="text" class="form-control" id="inputZip">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                      </div>
+                                    <div class="col-12">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                          Seleziona per proseguire
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <button type="submit" class="btn btn-primary">Salva</button>
+                                      <button type="submit" class="btn bg-warning">Svuota</button>
+                                    </div>
+                                  </form>
                             </div>
                             </div>
 
@@ -125,21 +195,27 @@
 
                         <div class="col-12 col-md-8 order-sm-2 order-md-1">
 
-                            <div>
+                            <div class="mb-3">
 
                                 <h1 class="d-inline">Boolean</h1> 
                                 
-                                <span class="bg-custom rounded-4 p-1">Piano Blaze</span>
+                                <span class="bg-custom-dark-blue rounded-4 p-1">Piano Blaze</span>
 
                             </div>
 
                             <div>
 
-                                <span class="bg-custom rounded-4 p-1">3 app</span>
+                                <span class="bg-custom-dark-blue rounded-4 p-1">3 app</span>
 
                                 <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i>
                                 
-                                <i class="fa-solid fa-plus bg-custom rounded-4 p-1" style="color: #ffffff;"></i>
+                                <i class="fa-solid fa-plus bg-custom-dark-blue rounded-4 p-1" style="color: #ffffff;"></i>
+
+                                <span class="bg-custom-dark-blue rounded-4 p-1 custom-collapse-side-bar-header">Boolean mobile app</span>
+
+                                <span class="bg-custom-dark-blue rounded-4 p-1 custom-collapse-side-bar-header">Boolean web app</span>
+
+                                <span class="bg-custom-dark-blue rounded-4 p-1 custom-collapse-side-bar-header">Boolean blog app</span>
 
                             </div>
 
